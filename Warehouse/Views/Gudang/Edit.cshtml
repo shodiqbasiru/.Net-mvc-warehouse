@@ -1,0 +1,22 @@
+@model Warehouse.Models.Gudang
+
+<h1>Edit Gudang</h1>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="KodeGudang" class="control-label"></label>
+        <input asp-for="KodeGudang" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="NamaGudang" class="control-label"></label>
+        <input asp-for="NamaGudang" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="AlamatGudang" class="control-label"></label>
+        <input asp-for="AlamatGudang" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>

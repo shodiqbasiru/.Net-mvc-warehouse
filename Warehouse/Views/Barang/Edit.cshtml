@@ -1,0 +1,34 @@
+@model Warehouse.Models.Barang
+
+<h1>Edit Barang</h1>
+
+<form method="post" asp-action="Edit" asp-controller="Barang">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group mb-3">
+        <label asp-for="KodeBarang" class="control-label"></label>
+        <input asp-for="KodeBarang" class="form-control" />
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="NamaBarang" class="control-label"></label>
+        <input asp-for="NamaBarang" class="form-control" />
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="HargaBarang" class="control-label"></label>
+        <input asp-for="HargaBarang" class="form-control" />
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="JumlahBarang" class="control-label"></label>
+        <input asp-for="JumlahBarang" class="form-control" />
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="ExpiredDate" class="control-label"></label>
+        <input asp-for="ExpiredDate" class="form-control" />
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="GudangId" class="control-label"></label>
+        <select asp-for="GudangId" class="form-control" asp-items="ViewBag.GudangId"></select>
+    </div>
+    <div class="form-group mb-3">
+        <button type="submit" class="btn btn-primary">Update</button>
+    </div>
+</form>

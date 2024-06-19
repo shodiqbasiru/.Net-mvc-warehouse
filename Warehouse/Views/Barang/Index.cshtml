@@ -1,0 +1,35 @@
+@model IEnumerable<Warehouse.Models.Barang>
+
+<h1>Daftar Barang</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.KodeBarang)</th>
+        <th>@Html.DisplayNameFor(model => model.NamaBarang)</th>
+        <th>@Html.DisplayNameFor(model => model.HargaBarang)</th>
+        <th>@Html.DisplayNameFor(model => model.JumlahBarang)</th>
+        <th>@Html.DisplayNameFor(model => model.ExpiredDate)</th>
+        <th>@Html.DisplayNameFor(model => model.Gudang.NamaGudang)</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.KodeBarang)</td>
+            <td>@Html.DisplayFor(modelItem => item.NamaBarang)</td>
+            <td>@Html.DisplayFor(modelItem => item.HargaBarang)</td>
+            <td>@Html.DisplayFor(modelItem => item.JumlahBarang)</td>
+            <td>@Html.DisplayFor(modelItem => item.ExpiredDate)</td>
+            <td>@Html.DisplayFor(modelItem => item.Gudang.NamaGudang)</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -1,0 +1,32 @@
+@model IEnumerable<Warehouse.Models.Gudang>
+
+<h1>Daftar Gudang</h1>
+
+<p>
+    <a asp-action="Create">Tambah Gudang</a>
+</p>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.KodeGudang)</th>
+        <th>@Html.DisplayNameFor(model => model.NamaGudang)</th>
+        <th>@Html.DisplayNameFor(model => model.AlamatGudang)</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>@Html.DisplayFor(modelItem => item.KodeGudang)</td>
+        <td>@Html.DisplayFor(modelItem => item.NamaGudang)</td>
+        <td>@Html.DisplayFor(modelItem => item.AlamatGudang)</td>
+        <td>
+            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+        </td>
+    </tr>
+    }
+    </tbody>
+</table>

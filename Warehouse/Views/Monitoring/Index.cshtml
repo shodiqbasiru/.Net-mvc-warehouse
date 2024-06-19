@@ -1,0 +1,41 @@
+@model IEnumerable<Warehouse.Models.Barang>
+
+<h1>Monitoring Barang</h1>
+
+<form asp-action="Index" class="mb-3">
+    <div class="form-group mb-3">
+        <label for="namaGudang">Nama Gudang:</label>
+        <input type="text" id="namaGudang" name="namaGudang" value="@ViewBag.CurrentFilter" class="form-control" />
+    </div>
+    <div class="form-group mb-3">
+        <label for="expiredDate">Expired Date:</label>
+        <input type="date" id="expiredDate" name="expiredDate" value="@ViewBag.CurrentFilter" class="form-control" />
+    </div>
+    <input type="submit" value="Filter" class="btn btn-primary" />
+</form>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.KodeBarang)</th>
+        <th>@Html.DisplayNameFor(model => model.NamaBarang)</th>
+        <th>@Html.DisplayNameFor(model => model.HargaBarang)</th>
+        <th>@Html.DisplayNameFor(model => model.JumlahBarang)</th>
+        <th>@Html.DisplayNameFor(model => model.ExpiredDate)</th>
+        <th>@Html.DisplayNameFor(model => model.Gudang.NamaGudang)</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>@Html.DisplayFor(modelItem => item.KodeBarang)</td>
+        <td>@Html.DisplayFor(modelItem => item.NamaBarang)</td>
+        <td>@Html.DisplayFor(modelItem => item.HargaBarang)</td>
+        <td>@Html.DisplayFor(modelItem => item.JumlahBarang)</td>
+        <td>@Html.DisplayFor(modelItem => item.ExpiredDate)</td>
+        <td>@Html.DisplayFor(modelItem => item.Gudang.NamaGudang)</td>
+    </tr>
+    }
+    </tbody>
+</table>

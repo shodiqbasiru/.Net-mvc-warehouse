@@ -8,11 +8,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df82d68f-d633-442c-8e8b-5b48cd398572" name="Changes" comment="" />
+    <list default="true" id="df82d68f-d633-442c-8e8b-5b48cd398572" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Warehouse/Data/AppDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Warehouse/Models/Barang.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Warehouse/Models/Gudang.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Warehouse/Views/Barang/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Warehouse/Views/Gudang/Create.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Warehouse/Views/Gudang/Edit.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Warehouse/Views/Gudang/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Warehouse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Warehouse/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse/Controllers/GudangController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse/Controllers/GudangController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse/Warehouse.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse/Warehouse.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse/appsettings.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,6 +47,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
@@ -85,7 +105,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718800717928</updated>
-      <workItem from="1718800723675" duration="3783000" />
+      <workItem from="1718800723675" duration="6258000" />
     </task>
     <servers />
   </component>
